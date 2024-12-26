@@ -18,3 +18,4 @@ const s3 = {
         abc : "12months",
     }
 }
+console.log(s2.name,s3.Work_Experience);
