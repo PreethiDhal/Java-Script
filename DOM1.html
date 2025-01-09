@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .addBackground{
+            color:black;background-color: aqua;
+            padding: 150px; width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">Hello</p>
+    <button onClick="changeclr()">CLICK
+    </button>
+    <script>
+          var toggle = false;
+       function changeclr(){
+        const target_ele = document.getElementById('para');
+        if(!toggle){ 
+        //target_ele.style.color = 'blue';
+        //target_ele.style.backgroundColor = 'yellow';
+        target_ele.classList.add('addBackground');
+        toggle = true;
+        }
+        else{
+           // target_ele.style.color = 'black';
+            //target_ele.style.backgroundColor = 'white';
+            target_ele.classList.remove('addBackground');
+            toggle = false;
+        }
+       } 
+    </script>
+</body>
+</html>
